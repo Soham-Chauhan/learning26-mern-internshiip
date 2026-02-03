@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header{
+    height: 150px;
+    width: 100%;
+    background-color: rgb(45, 31, 31);
+    border: 1 px solid white;
+    color: wheat;
+    text-align: center;
+    position: sticky;
+   
+}
+h1{
+    padding: 50px;
+    font-size: 40px;
+    
+}
