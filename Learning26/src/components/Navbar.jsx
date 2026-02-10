@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom'
 export const Navbar = () => {
   return (
     <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 
     {/* <a class="navbar-brand" href="/navabar">Navbar</a> */}
-    <Link class="navbar-brand" to="/">Navbar</Link>
+    <Link className="navbar-brand" to="/">Navbar</Link>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div className="collapse navbar-collapse" id="navbarSupportedContent">
     {/* <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="/netflixhome">NetHome <span class="sr-only">(current)</span></a>
@@ -23,18 +23,30 @@ export const Navbar = () => {
       </li>
     </ul> */}
 
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <Link class="nav-link" to="/netflixhome">NetHome </Link>
+    <ul className="navbar-nav mr-auto">
+      <li className="nav-item active">
+        <Link className="nav-link" to="/netflixhome">NetHome </Link>
       </li>
-      <li class="nav-item">
-        <Link class="nav-link" to="/netflixshow">NetShow </Link>
+      <li className="nav-item">
+        <Link className="nav-link" to="/netflixshow">NetShow </Link>
       </li>
-      <li class="nav-item">
-        <Link class="nav-link" to="/netflixmovies">NetMovies </Link>
+      <li className="nav-item">
+        <Link className="nav-link" to="/netflixmovies">NetMovies </Link>
       </li>
-      <li class="nav-item">
-        <Link class="nav-link" to="/about">About </Link>
+      <li className="nav-item">
+        <Link className="nav-link" to="/about">About </Link>
+      </li>
+       <li className="nav-item">
+        <Link className="nav-link" to="/functiondemo">FunctionDemo </Link>
+      </li>
+       <li className="nav-item">
+        <Link className="nav-link" to="/usestatedemo1">UseStateDemo1 </Link>
+      </li>
+       <li className="nav-item">
+        <Link className="nav-link" to="/usestatedemo2">UseStateDemo2 </Link>
+      </li>
+     <li className="nav-item">
+        <Link className="nav-link" to="/usestatedemo3">UseStateDemo3 </Link>
       </li>
      
         

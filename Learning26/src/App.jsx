@@ -18,6 +18,10 @@ import { HomeComponent } from './components/HomeComponent';
 import { ErrorNotFound } from './components/ErrorNotFound';
 import { Watch } from './components/Watch';
 import { NetflixMovies } from './components/NetflixMovies';
+import { FunctionDemo } from './components/FunctionDemo';
+import { UseStateDemo1 } from './components/UseStateDemo1';
+import { UseStateDemo2 } from './components/UseStateDemo2';
+import { UseStateDemo3 } from './components/UseStateDemo3';
 // import './App.css'
 
 
@@ -29,7 +33,7 @@ function App() {
   return (
     <div>
      <Navbar></Navbar>
-
+   
     <Routes>
       <Route path='/netflixhome' element={<NetflixHome/>}></Route>
       <Route path='/netflixshow' element={<NetflixShow/>}></Route>
@@ -38,7 +42,11 @@ function App() {
       <Route path='/about' element={<About/>}></Route>
       <Route path='/watch/:name' element={<Watch/>}></Route>
       <Route path='/*' element={<ErrorNotFound/>}></Route>
-
+      <Route path='/functiondemo' element={<FunctionDemo/>}></Route>
+      <Route path='usestatedemo1' element={<UseStateDemo1/>}></Route>
+      <Route path='usestatedemo2' element={<UseStateDemo2/>}></Route>
+      <Route path='usestatedemo3' element={<UseStateDemo3/>}></Route>
+      
     </Routes>
     
     </div>
