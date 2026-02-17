@@ -27,6 +27,13 @@ import { FormDemo1 } from './components/Form/FormDemo1';
 import { SubEmployeeList } from './components/SubEmployeeList';
 import { InputDemo1 } from './components/Input/InputDemo1';
 import { TableComponent } from './components/TableComponent';
+import { FormDemo2 } from './components/Form/FormDemo2';
+import { FormDemo3 } from './components/Form/FormDemo3';
+import Dropdown from './components/DropDown';
+import { FormDemo4 } from './components/Form/FormDemo4';
+import { FormDemo5 } from './components/Form/FormDemo5';
+import { PassowordValidation } from './components/Form/PassowordValidation';
+
 // import './App.css'
 
 
@@ -47,6 +54,7 @@ function App() {
       <Route path='/about' element={<About/>}></Route>
       <Route path='/watch/:name' element={<Watch/>}></Route>
       <Route path='/*' element={<ErrorNotFound/>}></Route>
+      <Route path='/dropdown' element={<Dropdown/>}></Route>
       <Route path='/functiondemo' element={<FunctionDemo/>}></Route>
       <Route path='usestatedemo1' element={<UseStateDemo1/>}></Route>
       <Route path='usestatedemo2' element={<UseStateDemo2/>}></Route>
@@ -55,7 +63,13 @@ function App() {
       <Route path='employee' element={<Employee/>}></Route>
       <Route path='inputdemo1' element={<InputDemo1/>}></Route>
       <Route path='tablecomponent' element={<TableComponent/>}></Route>
-    
+      <Route path='formdemo2' element={<FormDemo2/>}></Route>
+      <Route path='formdemo3' element={<FormDemo3/>}></Route>
+      <Route path='formdemo4' element={<FormDemo4/>}></Route>
+      <Route path='formdemo5' element={<FormDemo5/>}></Route>
+      <Route path='passwordvalidation' element={<PassowordValidation/>}></Route>
+      
+     
       
     </Routes>
     
