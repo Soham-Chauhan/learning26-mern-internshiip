@@ -33,6 +33,9 @@ import Dropdown from './components/DropDown';
 import { FormDemo4 } from './components/Form/FormDemo4';
 import { FormDemo5 } from './components/Form/FormDemo5';
 import { PassowordValidation } from './components/Form/PassowordValidation';
+import { ApiDemo1 } from './components/Api/ApiDemo1';
+import { ApiDemo2 } from './components/Api/ApiDemo2';
+import { ApiDemo3 } from './components/Api/ApiDemo3';
 
 // import './App.css'
 
@@ -68,6 +71,9 @@ function App() {
       <Route path='formdemo4' element={<FormDemo4/>}></Route>
       <Route path='formdemo5' element={<FormDemo5/>}></Route>
       <Route path='passwordvalidation' element={<PassowordValidation/>}></Route>
+      <Route path='apidemo1' element={<ApiDemo1/>}></Route>
+      <Route path='apidemo2' element={<ApiDemo2/>}></Route>
+      <Route path='apidemo3' element={<ApiDemo3/>}></Route>
       
      
       
