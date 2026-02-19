@@ -26,14 +26,14 @@ export const Navbar = () => {
     <ul className="navbar-nav mr-auto">
       {/* <li className="nav-item active">
         <Link className="nav-link" to="/netflixhome">NetHome </Link>
-      </li>
+      </li> */}
       <li className="nav-item">
         <Link className="nav-link" to="/netflixshow">NetShow </Link>
       </li>
       <li className="nav-item">
         <Link className="nav-link" to="/netflixmovies">NetMovies </Link>
       </li>
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <Link className="nav-link" to="/about">About </Link>
       </li> */}
        {/* <li className="nav-item">
@@ -48,7 +48,7 @@ export const Navbar = () => {
      <li className="nav-item">
         <Link className="nav-link" to="/usestatedemo3">UseStateDemo3 </Link>
       </li> */}
-       <li className="nav-item">
+       {/* <li className="nav-item">
         <Link className="nav-link" to="/dropdown">Dropdown </Link>
       </li>
       <li className="nav-item">
@@ -59,9 +59,9 @@ export const Navbar = () => {
       </li>
       <li className="nav-item">
         <Link className="nav-link" to="/formdemo1">FormDemo1 </Link>
-      </li>
+      </li> */}
      
-         <li className="nav-item">
+         {/* <li className="nav-item">
         <Link className="nav-link" to="/formdemo2">FormDemo2 </Link>
       </li>
       <li className="nav-item">
@@ -75,7 +75,7 @@ export const Navbar = () => {
       </li>
        <li className="nav-item">
         <Link className="nav-link" to="/passwordvalidation">PasswordValidation </Link>
-      </li>
+      </li> */}
        <li className="nav-item">
         <Link className="nav-link" to="/apidemo1">ApiDemo1</Link>
       </li>
@@ -84,6 +84,9 @@ export const Navbar = () => {
       </li>
        <li className="nav-item">
         <Link className="nav-link" to="/apidemo3">ApiDemo3</Link>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/omdbapi">Omdbapi</Link>
       </li>
       
     </ul>

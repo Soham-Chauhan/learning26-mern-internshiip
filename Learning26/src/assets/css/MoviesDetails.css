@@ -1,0 +1,48 @@
+.movie-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.movie-page .movie-card {
+  background: #ffffff;
+  width: 350px;
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-page .movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+}
+
+.movie-page img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.movie-page h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #2a5298;
+}
+
+.movie-page p {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #444;
+  text-align: left;
+}
+
+.movie-page h2 {
+  color: white;
+  font-weight: 500;
+}
