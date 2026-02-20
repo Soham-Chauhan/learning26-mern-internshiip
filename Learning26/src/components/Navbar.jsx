@@ -88,6 +88,12 @@ export const Navbar = () => {
       <li className="nav-item">
         <Link className="nav-link" to="/omdbapi">Omdbapi</Link>
       </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/apidemo4">ApiDemo4</Link>
+      </li>
+       <li className="nav-item">
+        <Link className="nav-link" to="/apidemo5">ApiDemo5</Link>
+      </li>
       
     </ul>
     

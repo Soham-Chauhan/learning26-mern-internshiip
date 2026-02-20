@@ -38,6 +38,8 @@ import { ApiDemo2 } from './components/Api/ApiDemo2';
 import { ApiDemo3 } from './components/Api/ApiDemo3';
 import { Omdbapi } from './components/Api/Omdbapi';
 import { MoviesDetails } from './components/Api/MoviesDetails';
+import { ApiDemo4 } from './components/Api/ApiDemo4';
+import { ApiDemo5 } from './components/Api/ApiDemo5';
 
 // import './App.css'
 
@@ -78,6 +80,8 @@ function App() {
       <Route path='apidemo3' element={<ApiDemo3/>}></Route>
       <Route path='omdbapi' element={<Omdbapi/>}></Route>
       <Route path='/moviesdetails/:id' element={<MoviesDetails/>}></Route>
+      <Route path='/apidemo4' element={<ApiDemo4/>}></Route>
+      <Route path='/apidemo5' element={<ApiDemo5/>}></Route>
       
      
       

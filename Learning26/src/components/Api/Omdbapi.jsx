@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { MoviesDetails } from './MoviesDetails'
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
 
@@ -10,22 +10,36 @@ import { Link } from 'react-router-dom';
 export const Omdbapi = () => {
 
     const [showMovies, setshowMovies] = useState([])
-    // const navigate = useNavigate();
+    const [movieName, setMovieName] = useState("") // search movies
+    const navigate = useNavigate();
     
     const searchMovies = async() =>{
-        const res = await axios.get("https://www.omdbapi.com/?apikey=c379941e&s=Avengers")
+        // const res = await axios.get("https://www.omdbapi.com/?apikey=c379941e&s=Avengers")
+        const res = await axios.get( `https://www.omdbapi.com/?apikey=c379941e&s=${movieName}`)
         console.log(res.data.Search)
         setshowMovies(res.data.Search)
     }
 
-//     const handleView = (id) => {
-//         navigate(`/moviesdetails/${id}`);
-//   }
+    const handleView = (id) => {
+        navigate(`/moviesdetails/${id}`);
+  }
 
   return (
     <div style={{textAlign:"center"}}>
         <h1>OMDB API DEMO</h1>
-         <button className='btn btn-danger' onClick={searchMovies} style={{width:"70px"}}>GET</button>
+
+        <input
+                type="text"
+                placeholder="Search Movie..."
+                value={movieName}
+                onChange={(e) => setMovieName(e.target.value)}
+                style={{ padding: "8px", marginRight: "10px" }}
+        />
+
+        <button className='btn btn-danger' onClick={searchMovies}>SEARCH</button>
+
+
+         {/* <button className='btn btn-danger' onClick={()=>{searchMovies()}} style={{width:"70px"}}>GET</button> */}
 
 
          <div style={{
@@ -51,11 +65,11 @@ export const Omdbapi = () => {
                                 <h5>{showMovie.Title}</h5>
                                 <p><strong>Year:</strong> {showMovie.Year}</p>
                                 
-                                {/* <button onClick={() => handleView(showMovie.imdbID)}>Details</button> */}
+                                <button onClick={() => handleView(showMovie.imdbID)}>Details</button>
                                 
-                                    <Link to={`/moviesdetails/${showMovie.imdbID}`}>
+                                    {/* <Link to={`/moviesdetails/${showMovie.imdbID}`}>
                                         <button>details</button>
-                                    </Link>
+                                    </Link> */}
                             
                             </div>
                             
